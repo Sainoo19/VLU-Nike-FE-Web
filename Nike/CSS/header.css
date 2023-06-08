@@ -1,0 +1,184 @@
+header{
+    width: 100%;
+    height: 35px;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: space-between;
+}
+.jordan-logo{
+    width: 40px;
+    height: auto;
+    position: absolute;
+    left: 40px;
+    top: 4px;
+}
+.jordan-logo:hover{
+    opacity: 0.5;
+}
+.header-content{
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    margin-top: 7px;
+}
+.header-menu{
+    display: inline-flex;
+
+}
+.header-menu li{
+    margin-left: 12px;
+
+}
+.help-item{
+    color: black;
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    width: fit-content;
+    height: 12px;
+    margin-top: 4px;
+}
+.help-item:hover{
+    color: grey;
+}
+.header-menu li:hover .help-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.help-menu{
+    position: absolute;
+    top: 35px;
+    right: 180px;
+    width: 220px;
+    background-color: white;
+    font-size: 15px;
+    height: 310px;
+    border-radius:10px ;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+.help-title{
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+
+}
+.help-content{
+    line-height: 1.6;
+
+}
+.content-mau{
+    color: grey;
+}
+.content-mau:hover{
+    color: black;
+}
+.helptitle-mau{
+    color: black;
+}
+#hi{
+    right: 50px;
+    text-align: right;
+    position: absolute;
+    visibility: hidden;
+    cursor: pointer;
+    width: fit-content;
+    height: 24px;
+    padding-right: 36px;
+}
+#hi i{
+    font-size: 24px;
+    position: absolute;
+    margin-left: 12px;
+    top: 5px;
+    
+}
+#user-menu{
+    visibility: hidden;
+    transition: 0.1s ease-out;
+}
+
+.user-menu{
+    position: absolute;
+    top: 35px;
+    right: 50px;
+    width: 240px;
+    background-color: white;
+    font-size: 15px;
+    height: 0px;
+    border-radius:10px ;
+    z-index: 1000000;
+    
+}
+.user-menu ul{
+    margin-left: 20px;
+}
+.user-menu ul li a{
+    line-height: 1.8;
+    transition: 0s;
+}
+
+
+
+#hoa-home-info{
+    height: 60px;
+    box-shadow: 0 2px 4px -4px rgb(26, 26, 26);
+    background-color: rgb(240, 240, 240);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#p1{
+    font-size: 14px;
+    margin-bottom: 6px;
+    animation: fade 6s infinite ;
+    position: relative;
+    left: 0%;
+    transition: 1s;
+}
+#p2{
+    font-size: 12px;
+    animation: fade2 6s infinite ;
+    position: relative;
+    left: 0%;
+    transition: 1s;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@keyframes fade {
+    0% {font-size:12px; opacity:0; }
+    5% {font-size:14px; opacity:0;left: 40%;}
+    10%{font-size:14px; opacity:1;left: 0%;}
+    85% {font-size:14px; opacity:1;left: 0%;}
+    98%{font-size: 12px; opacity: 0;left: -50%;}
+    100% {font-size:12px; opacity:0;}
+
+}
+@keyframes fade2 {
+    0% {font-size:10px; opacity:0; }
+    5% {font-size:12px; opacity:0;left: 40%;}
+    10%{font-size:12px; opacity:1;left: 0%;}
+    85% {font-size:12px; opacity:1;left: 0%;}
+    98%{font-size: 12px; opacity: 0;left: -50%;}
+    100% {font-size:10px; opacity:0;}
+}
+
+@media screen and (max-width:900px) {
+    header{
+        display: none;
+    }
+    #hoa-home-info.active{
+        animation: delay4 0.3s forwards;
+    }
+
+    @keyframes delay4 {
+        0% {filter: none;}
+        80%{filter: none;}
+        100%{filter: blur(4px) }
+    } 
+}

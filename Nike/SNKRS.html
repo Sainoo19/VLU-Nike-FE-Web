@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/snkrs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="CSS/footer.css">
+   <link rel="shortcut icon" href="Image/nike-xxl.png" />
+    <title>Nike SNKRS. Release Dates and Launch Calendar VN</title>
+</head>
+<body onload="refresh()">
+    <header id="snkrs-header">
+        <div><a class="link-nike" href="home.html"><i id="arrow-left" class="fas fa-chevron-left"></i> Visit Nike.com</a></div>
+        <div class="utility-container">
+            <p id="change-color-black" class="utility">Join/Log In</p>
+            <p id="change-color-black" class="utility">Help</p>
+            <p class="utility"><i class="fas fa-shopping-cart"></i></p>
+            <p class="utility"><i id="marker-icon" class="fas fa-map-marker"></i> <span id="Vietnam-text">Vietnam</span></p>
+        </div>
+    </header>
+    <nav id="snkrs-nav">
+        <div class="container">
+            <a href="SNKRS.html"><img class="snkrs-logo" src="Image/SNKRS2.jpg" alt=""></a>
+            <div onclick="galleryView()" id="gallery-view">
+                <div id="square"></div>
+                <div id="square"></div>
+                <div id="square"></div>
+                <div id="square"></div>
+            </div>
+            <div onclick="galleryView2()" id="gallery-view2">
+                <div id="rectangle1"></div>
+                <div id="rectangle2"></div>
+            </div>
+            <ul class="snkrs-menu">
+                <li onclick="item1()" id="gach1" class="nav-item">Feed</li>
+                <li onclick="item2()" id="gach2" class="nav-item">In Stock</li>
+                <li onclick="item3()" id="gach3" class="nav-item">Upcoming</li>
+            </ul>
+        </div>
+    </nav>
+    <div id="main-container1">
+        <div class="product-container" id="product-container">
+            <div class = "product-card" onmouseover="hover()" onmouseout="out()">
+                <img id="product-image1" src="Image/SNKRS/air-force-1-purple-skeleton-cu8067-500-release-date.jpg" alt="">
+                <div id="product-info-container">
+                    <div class="coming" id="coming">Coming Soon</div>  
+                    <div class="product-info" id="product-info">
+                        <p class="product-name">Air Force 1</p>
+                        <p class="product-type">Purple Skeleton</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "product-card" onmouseover="hover2()" onmouseout="out2()">
+                <img id="product-image2" src="Image/SNKRS/air-jordan-1-low-x-solefly-black-and-sport-red-dn3400-001-release-date.jpg" alt="">
+                <div id="product-info-container">
+                    <div class="coming" id="coming2">Coming Soon</div>  
+                    <div class="product-info" id="product-info2">
+                        <p class="product-name">Air Jordan 1 Low x SoleFly</p>
+                        <p class="product-type">Black and Sport Red</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "product-card" onmouseover="hover3()" onmouseout="out3()">
+                <img id="product-image3" src="Image/SNKRS/air-jordan-1-craft-dh3097-001-release-date.jpg" alt="">
+                <div id="product-info-container">
+                    <div class="coming" id="coming3">Coming Soon</div>  
+                    <div class="product-info" id="product-info3">
+                        <p class="product-name">Air Jordan 1</p>
+                        <p class="product-type">Craft</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "product-card" onmouseover="hover4()" onmouseout="out4()">
+                <img id="product-image4" src="Image/SNKRS/zoom-004-x-mmw-baroque-brown-cu0676-201-release-date.jpg" alt="">
+                <div id="product-info-container">
+                    <div class="coming" id="coming4">Coming Soon</div>  
+                    <div class="product-info" id="product-info4">
+                        <p class="product-name">Zoom 004 x MMW</p>
+                        <p class="product-type">Baroque Brown</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "product-card" onmouseover="hover5()" onmouseout="out5()">
+                <img id="product-image5" src="Image/SNKRS/dunk-low-siempre-familia-do2160-335-release-date.jpg" alt="">
+                <div id="product-info-container">
+                    <div class="coming" id="coming5">Coming Soon</div>  
+                    <div class="product-info" id="product-info5">
+                        <p class="product-name">Dunk Low</p>
+                        <p class="product-type">Siempre Familia</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "product-card" onmouseover="hover6()" onmouseout="out6()">
+                <img id="product-image6" src="Image/SNKRS/air-huarache-shadow-dh8143-400-release-date.jpg" alt="">
+                <div id="product-info-container">
+                    <div class="coming" id="coming6">Coming Soon</div>  
+                    <div class="product-info" id="product-info6">
+                        <p class="product-name">Air Huarache</p>
+                        <p class="product-type">Shadow</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "product-card" onmouseover="hover7()" onmouseout="out7()">
+                <img id="product-image7" src="Image/SNKRS/kickcheck-12-3.jpg" alt="">
+                <div id="product-info-container">
+                    <div class="coming2">Learn More</div>    
+                </div>
+            </div>
+            <div class = "product-card" onmouseover="hover8()" onmouseout="out8()">
+                <img id="product-image8" src="Image/SNKRS/air-force-1-mid-jewel-nyc-midnight-navy-release-date.jpg" alt="">
+                <div id="product-info-container">
+                    <div class="coming3" id="coming8">Buy</div>  
+                    <div class="product-info" id="product-info8">
+                        <p class="product-name">Air Force 1 Mid Jewel</p>
+                        <p class="product-type">NYC Midnight Navy</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "product-card" onmouseover="hover9()" onmouseout="out9()">
+                <img id="product-image9" src="Image/SNKRS/snkrs-style-nike-kwondo1.jpg" alt="">
+                <div id="product-info-container">
+                    <div class="product-info" id="product-info9">
+                        <p class="product-name">SNKRS Style</p>
+                        <p class="product-type">Nike Kwondo1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div id="main-container2">
+        <div class="product-container" id="product-container">
+            <div class = "product-card" onmouseover="hover10()" onmouseout="out10()">
+                <img id="product-image10" src="Image/SNKRS/air-force-1-mid-jewel-nyc-midnight-navy-release-date.jpg" alt="">
+                <div id="product-info-container">
+                    <div class="coming3" id="coming10">Buy</div>  
+                    <div class="product-info" id="product-info10">
+                        <p class="product-name">Air Force 1 Mid Jewel</p>
+                        <p class="product-type">NYC Midnight Navy</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "product-card" onmouseover="hover11()" onmouseout="out11()">
+                <img id="product-image11" src="Image/SNKRS/DM7901_500_A_PREM.jfif" alt="">
+                <div id="product-info-container">
+                    <div class="coming" id="coming11">Sold Out</div>  
+                    <div class="product-info" id="product-info11">
+                        <p class="product-name">sacai x KAWS Blazer Low</p>
+                        <p class="product-type">Purple Dusk</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "product-card" onmouseover="hover12()" onmouseout="out12()">
+                <img id="product-image12" src="Image/SNKRS/DC8877_200_A_PREM.jfif" alt="">
+                <div id="product-info-container">
+                    <div class="coming3" id="coming12">Buy</div>  
+                    <div class="product-info" id="product-info12">
+                        <p class="product-name">Air Force 1</p>
+                        <p class="product-type">LBJ</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "product-card" onmouseover="hover13()" onmouseout="out13()">
+                <img id="product-image13" src="Image/SNKRS/DC3590_101_A_PREM.jfif" alt="">
+                <div id="product-info-container">
+                    <div class="coming3" id="coming13">Buy</div>  
+                    <div class="product-info" id="product-info13">
+                        <p class="product-name">Women's Air Force 1 High Sculpt</p>
+                        <p class="product-type">'Silver'</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "product-card" onmouseover="hover14()" onmouseout="out14()">
+                <img id="product-image14" src="Image/SNKRS/DC3590_100_A_PREM.jfif" alt="">
+                <div id="product-info-container">
+                    <div class="coming3" id="coming14">Buy</div>  
+                    <div class="product-info" id="product-info14">
+                        <p class="product-name">Women's Air Force 1 High Sculpt</p>
+                        <p class="product-type">Gym Red</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "product-card" onmouseover="hover15()" onmouseout="out15()">
+                <img id="product-image15" src="Image/SNKRS/CT3290_300_A_PREM.jfif" alt="">
+                <div id="product-info-container">
+                    <div class="coming3" id="coming15">Buy</div>  
+                    <div class="product-info" id="product-info15">
+                        <p class="product-name">Offline Pack</p>
+                        <p class="product-type">Enamel Green</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "product-card" onmouseover="hover16()" onmouseout="out16()">
+                <img id="product-image16" src="Image/SNKRS/DO9549_001_A_PREM.jfif" alt="">
+                <div id="product-info-container">
+                    <div class="coming3" id="coming16">Buy</div>  
+                    <div class="product-info" id="product-info16">
+                        <p class="product-name">Air Max 1 x Patta</p>
+                        <p class="product-type">Night Maroon</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "product-card" onmouseover="hover17()" onmouseout="out17()">
+                <img id="product-image17" src="Image/SNKRS/CV7668_001_A_PREM.jfif" alt="">
+                <div id="product-info-container">
+                    <div class="coming3" id="coming17">Buy</div>  
+                    <div class="product-info" id="product-info17">
+                        <p class="product-name">Women's Air Force 1 with Swarovski® retroreflective crystals</p>
+                        <p class="product-type">Triple Black</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "product-card" onmouseover="hover18()" onmouseout="out18()">
+                <img id="product-image18" src="Image/SNKRS/DN5080_100_A_PREM.jfif" alt="">
+                <div id="product-info-container">
+                    <div class="coming3" id="coming18">Buy</div>  
+                    <div class="product-info" id="product-info18">
+                        <p class="product-name">Air Huarache</p>
+                        <p class="product-type">Liverpool</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main-container3">
+        <div class="product-container" id="product-container">
+            <div class = "product-card" onmouseover="hover19()" onmouseout="out19()">
+                <img id="product-image19" src="Image/SNKRS/DD1399_104_A_PREM.jfif" alt="">
+                <div id="time">
+                    <p id="month">Dec</p>
+                    <p id="day">10</p>
+                </div>
+                <div id="product-info-container">
+                    <div class="coming" id="coming19">Sold Out</div>  
+                    <div class="product-info" id="product-info19">
+                        <p class="product-name">Dunk High</p>
+                        <p class="product-type">Championship Navy</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "product-card" onmouseover="hover20()" onmouseout="out20()">
+                <img id="product-image20" src="Image/SNKRS/DM7901_500_A_PREM.jfif" alt="">
+                <div id="time">
+                    <p id="month">Dec</p>
+                    <p id="day">10</p>
+                </div>
+                <div id="product-info-container">
+                    <div class="coming" id="coming20">Sold Out</div>  
+                    <div class="product-info" id="product-info20">
+                        <p class="product-name">sacai x KAWS Blazer Low</p>
+                        <p class="product-type">Purple Dusk</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "product-card" onmouseover="hover21()" onmouseout="out21()">
+                <img id="product-image21" src="Image/SNKRS/CT8012_005_A_PREM.jfif" alt="">
+                <div id="time">
+                    <p id="month">Dec</p>
+                    <p id="day">11</p>
+                </div>
+                <div id="product-info-container">
+                    <div class="coming" id="coming21">Sold Out</div>  
+                    <div class="product-info" id="product-info21">
+                        <p class="product-name">Air Jordan 11</p>
+                        <p class="product-type">Cool Grey</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "product-card" onmouseover="hover22()" onmouseout="out22()">
+                <img id="product-image22" src="Image/SNKRS/378038_005_A_PREM.jfif" alt="">
+                <div id="time">
+                    <p id="month">Dec</p>
+                    <p id="day">11</p>
+                </div>
+                <div id="product-info-container">
+                    <div class="coming" id="coming22">Sold Out</div>  
+                    <div class="product-info" id="product-info22">
+                        <p class="product-name">Air Jordan 11</p>
+                        <p class="product-type">Cool Grey</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "product-card" onmouseover="hover23()" onmouseout="out23()">
+                <img id="product-image23" src="Image/SNKRS/378039_005_A_PREM.jfif" alt="">
+                <div id="time">
+                    <p id="month">Dec</p>
+                    <p id="day">11</p>
+                </div>
+                <div id="product-info-container">
+                    <div class="coming" id="coming23">Sold Out</div>  
+                    <div class="product-info" id="product-info23">
+                        <p class="product-name">Air Jordan 11</p>
+                        <p class="product-type">Cool Grey</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "product-card" onmouseover="hover24()" onmouseout="out24()">
+                <img id="product-image24" src="Image/SNKRS/378040_005_A_PREM.jfif" alt="">
+                <div id="time">
+                    <p id="month">Dec</p>
+                    <p id="day">11</p>
+                </div>
+                <div id="product-info-container">
+                    <div class="coming" id="coming24">Sold Out</div>  
+                    <div class="product-info" id="product-info24">
+                        <p class="product-name">Air Jordan 11</p>
+                        <p class="product-type">Cool Grey</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "product-card" onmouseover="hover25()" onmouseout="out25()">
+                <img id="product-image25" src="Image/SNKRS/CI6165_005_A_PREM.jfif" alt="">
+                <div id="time">
+                    <p id="month">Dec</p>
+                    <p id="day">11</p>
+                </div>
+                <div id="product-info-container">
+                    <div class="coming" id="coming25">Sold Out</div>  
+                    <div class="product-info" id="product-info25">
+                        <p class="product-name">Air Jordan 11</p>
+                        <p class="product-type">Cool Grey</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "product-card" onmouseover="hover26()" onmouseout="out26()">
+                <img id="product-image26" src="Image/SNKRS/zoom-004-x-mmw-baroque-brown-cu0676-201-release-date.jpg" alt="">
+                <div id="time">
+                    <p id="month">Dec</p>
+                    <p id="day">13</p>
+                </div>
+                <div id="product-info-container">
+                    <div class="coming" id="coming26">Sold Out</div>  
+                    <div class="product-info" id="product-info26">
+                        <p class="product-name">Zoom 004 x MMW</p>
+                        <p class="product-type">Baroque Brown</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "product-card" onmouseover="hover27()" onmouseout="out27()">
+                <img id="product-image27" src="Image/SNKRS/dunk-low-siempre-familia-do2160-335-release-date.jpg" alt="">
+                <div id="time">
+                    <p id="month">Dec</p>
+                    <p id="day">14</p>
+                </div>
+                <div id="product-info-container">
+                    <div class="coming" id="coming27">Sold Out</div>  
+                    <div class="product-info" id="product-info27">
+                        <p class="product-name">Dunk Low</p>
+                        <p class="product-type">Siempre Familia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+           
+          
+    </div>
+    <div id="footer" class="footer2">
+        <div class="footer1-container">
+            <div class="footer-column-container">
+                <div class="footer-column" id="column1">
+                     <ul>
+                         <li><a  id="footer-column-title" class="footer-column-content" href="">FIND A STORE</a> </li>
+                         <li><a  id="footer-column-title" class="footer-column-content" href="">BECOME A MEMBER</a> </li>
+                         <li><a  id="footer-column-title" class="footer-column-content" href="">SIGN UP FOR EMAIL</a> </li>
+                         <li><a  id="footer-column-title" class="footer-column-content" href="">SEND US FEEDBACK</a></li>
+                     </ul>
+                </div>
+                <div class="footer-column" id="column2">
+                     <ul>
+                         <li><a id="footer-column-title" class="footer-column-content" href="">GET HELP</a></li>
+                         <li><a class="footer-column-content"  href="">Order Status</a></li>
+                         <li><a class="footer-column-content"  href="">Delivery</a></li>
+                         <li><a class="footer-column-content"  href="">Returns</a></li>
+                         <li><a class="footer-column-content"  href="">Payment Options</a></li>
+                         <li><a class="footer-column-content"  href="">Contact Us</a></li>
+     
+                     </ul>
+                </div>
+                <div class="footer-column" id="column3">
+                    <ul>
+                         <li><a id="footer-column-title" class="footer-column-content" href="">ABOUT NIKE</a> </li>
+                         <li><a class="footer-column-content"  href="">News</a> </li>
+                         <li><a class="footer-column-content"  href="">Careers</a> </li>
+                         <li><a class="footer-column-content"  href="">Investors</a></li>
+                         <li><a class="footer-column-content" href="">Sustainability</a></li>
+                    </ul>
+                </div>
+             </div>
+             <div class="footer-icon-container">
+                 <div class="footer-icon"><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+                 <div class="footer-icon"><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+                 <div class="footer-icon"><a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a></div>
+                 <div class="footer-icon"><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+            </div>
+        </div>
+        <div class="footer2-container">
+            <div class="site-container">
+                <div class="site">
+                  <a href=""><i class="fa fa-map-marker" aria-hidden="true"></i> Vietnam</a>
+                </div>
+            
+                <div class="license">
+                    © 2021 Nike, Inc. All Rights Reserved
+                </div>
+            </div>
+            <div class="term">
+                <a href="">Guides</a>
+                <a href="">Team of Sale</a>
+                <a href="">Team of Use</a>
+                <a href="">Nike Privacy Policy</a>
+            </div>
+        </div>
+        <div id="background-white"></div>
+    </div>
+
+
+
+    <script src="JS/snkrs.js"></script>
+</body>
+</html>

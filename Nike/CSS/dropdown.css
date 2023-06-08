@@ -1,0 +1,377 @@
+.dropdown{
+    display: flex;
+    justify-content:center;
+    margin: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+    line-height: 1.8;
+    height: 0px;
+    transition: 0.3s;
+    z-index: 10000;
+}
+.dropdown2{
+    display: flex;
+    justify-content:center;
+    margin: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+    line-height: 1.8;
+    height: 0px;
+    transition: 0.3s;
+    z-index: 10000;
+}
+.title{
+    opacity: 0;
+    
+    visibility: hidden;
+}
+.title2{
+    opacity: 0;
+    
+    visibility: hidden;
+}
+.title3{
+    opacity: 0;
+    
+    visibility: hidden;
+}
+.title4{
+    opacity: 0;
+    
+    visibility: hidden;
+} 
+.title5{
+    opacity: 0;
+    
+    visibility: hidden;
+}
+.content{
+    
+    opacity: 0;
+    visibility: hidden;
+}
+.content2{
+    
+    opacity: 0;
+    visibility: hidden;
+}
+.content3{
+    
+    opacity: 0;
+    visibility: hidden;
+}
+.content4{
+    
+    opacity: 0;
+    visibility: hidden;
+}
+.content5{
+    
+    opacity: 0;
+    visibility: hidden;
+}
+@keyframes fade3 {
+    0% {opacity:0; visibility: hidden; }
+    100%{opacity:1; visibility: visible; }
+}  
+@keyframes fade4 {
+    0% {opacity:1; visibility: visible;}
+    100%{opacity:0; visibility: hidden;}
+}  
+
+#darken{
+    width: 100%;
+    position: absolute;
+    height: 110%;
+    background-color: black;
+    visibility: hidden;
+    z-index: 1000;
+}
+@keyframes darken {
+    0% {visibility: hidden;opacity: 0;}
+    50%{visibility: hidden;opacity: 0;}
+    100%{visibility: visible;  opacity: 0.4;}
+}  
+@keyframes darken2 {
+    0% {visibility: visible; opacity: 0.4;}
+    5%{visibility: hidden;opacity: 0;}
+    100%{visibility: hidden;opacity: 0;}
+} 
+.content li a{
+    color: grey;
+}
+.content li a:hover{
+    color: black;
+}
+.content2 li a{
+    color: grey;
+}
+.content2 li a:hover{
+    color: black;
+}
+.content3 li a{
+    color: grey;
+}
+.content3 li a:hover{
+    color: black;
+}
+.content4 li a{
+    color: grey;
+}
+.content4 li a:hover{
+    color: black;
+}
+.content5 li a{
+    color: grey;
+}
+.content5 li a:hover{
+    color: black;
+}
+.feature{
+    margin: 0px 30px;
+}
+.shoe{
+    margin: 0px 30px;
+}
+.clothing{
+    margin: 0px 30px;
+}
+.sport{
+    margin: 0px 30px;
+}
+.icon{
+    margin: 0px 60px;
+}
+.title{
+    margin-top: 40px;
+    font-size: 18px;
+    color: black;
+}
+.title2{
+    margin-top: 40px;
+    font-size: 18px;
+    color: black;
+}
+.title3{
+    margin-top: 40px;
+    font-size: 18px;
+    color: black;
+}
+.title4{
+    margin-top: 40px;
+    font-size: 18px;
+    color: black;
+}
+.title5{
+    margin-top: 40px;
+    font-size: 18px;
+    color: black;
+}
+.boy{
+    margin: 0px 30px;
+}
+.girl{
+    margin: 0px 30px;
+}
+.equip{
+    margin: 0px 30px;
+}
+.sales{
+    margin: 0px 30px;
+}
+
+@keyframes delay {
+    0% {filter: none;}
+    80%{filter: none;}
+    100%{filter: blur(4px) }
+}  
+@keyframes delay2 {
+    0% {filter: blur(4px);}
+    5%{filter: none;}
+    100%{filter: none;}
+} 
+
+.title-two{
+    display: none;
+}
+
+#backAll{
+    display: none;
+}
+#backMen{
+    display: none;
+}
+.title-three{
+    display: none;
+}
+/*responsive*/
+@media screen and (max-width:1600px){
+    .title{
+        margin-top: 20px;
+    }
+    .dropdown{
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    #backAll{
+        display: inherit;
+    }
+    #backMen{
+        display: inherit;
+    }
+    .title-three{
+        display: inherit;
+    }
+    
+    
+    #darken.active{
+        position: absolute;
+        height: 100%;
+        top: 0;
+        visibility: visible;
+        opacity: 0.4;
+        animation: delay3 0.3s forwards;
+    }
+
+    @keyframes delay3 {
+        0% {opacity: 0;visibility: hidden;}
+        80%{opacity: 0;visibility: visible;}
+        100%{opacity: 0.4;visibility: visible; }
+    } 
+
+    #main-container.active{
+        animation: delay4 0.3s forwards;
+    }
+
+    @keyframes delay4 {
+        0% {filter: none;}
+        80%{filter: none;}
+        100%{filter: blur(4px) }
+    } 
+
+    .title-two{
+        display: inherit;
+    }
+    .title-three{
+        font-size: 24px;
+        padding: 0;
+        margin-bottom: 16px;
+        display: flex;
+        margin-top: -80px;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        visibility: hidden;
+        right: 0;
+    }
+    .title-two{
+        visibility: hidden;
+        font-size: 16px;
+        margin-top: 4px;
+        color: gray;
+        right: -100%;
+        position: relative;
+    }
+    #backAll{
+        visibility: hidden;
+        position: absolute;
+    }
+    #backMen{
+        visibility: hidden;
+        position: absolute;
+    }
+    .title-two.active{
+        animation: transition9 0.3s forwards;
+    }
+    .title-three.active{
+        animation: transition12 0.3s forwards;
+    }
+    .title-two.active2{
+        animation: transition11 0.15s forwards;
+    }
+    #backAll.active{
+        animation: transition6 0.3s forwards;
+        position: absolute;
+    }
+    #backAll.active2{
+        animation: transition13 0.15s forwards;
+        position: absolute;
+    }
+    #backMen.active{
+        animation: transition14 0.3s forwards;
+        position: absolute;
+    }
+    @keyframes transition6 {
+        0% {visibility: hidden;right:0;}
+        50% {visibility: hidden;right:0;}
+        100%{visibility: visible;right: 75%;}
+    } 
+    @keyframes transition9 {
+        0% {visibility: hidden;right:-100%;}
+        50% {visibility: hidden;right:-100%;}
+        100%{visibility: visible;right: 0;}
+    } 
+    @keyframes transition11 {
+        0% {visibility: visible;right:0;}
+        100%{visibility: hidden;right: 50%;}
+    } 
+    @keyframes transition12 {
+        0% {visibility: hidden;right:0;}
+        50% {visibility: hidden;right:0;}
+        100%{visibility: visible;right: 61%;}
+    } 
+    @keyframes transition14 {
+        0% {visibility: hidden;right:0;}
+        50% {visibility: hidden;right:0;}
+        100%{visibility: visible;right: 72%;}
+    } 
+    #dropdown{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        height: fit-content;
+        left: 1%;
+        visibility: hidden;
+        margin-top: 56px;
+    }
+    .title{
+        display: none;
+    }
+    #menu-content{
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        right: -50%;
+        opacity: 1;
+        font-size: 16px;
+        margin-top: 8px;
+    }
+    #menu-content li{
+        margin-top: 8px;
+    }
+    #menu-content.active{
+        animation: transition15 0.3s forwards;
+
+    }
+    @keyframes transition15 {
+        0% {visibility: hidden;right:-50%;}
+        50% {visibility: hidden;right:-50%;}
+        100%{visibility: visible;right: 28%;}
+    } 
+    .content{
+        visibility: hidden;
+        position: absolute;
+    }
+    .icon{
+        margin: 0px 30px;
+    }
+    #chevron-left{
+        margin-right: 12px;
+    }
+}

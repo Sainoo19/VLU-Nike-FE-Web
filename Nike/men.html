@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="CSS/dropdown.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="shortcut icon" href="Image/download.png" />
+    <link rel="stylesheet" href="CSS/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600;700&family=Teko:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/men.css">
+    <link rel="stylesheet" href="CSS/signin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="CSS/footer.css">
+    <title>Men's Shoes, Clothing & Accessories. Nike VN</title>
+</head>
+<body>
+   <header>
+      <a href="jordan.html"><img class="jordan-logo" src="Image/Air_Jordan-Logo-wine.png" alt=""></a>
+      <div class="header-content">
+          <ul id="header-menu" class="header-menu">
+                <li><a class="help-item" href="">Help</a>
+                    <div class="help-menu">
+                        <ul class="help-content">
+                            <li class="help-title"><a class="helptitle-mau" href="">Help</a></li>
+                            <li><a class="content-mau" href="">Order Status</a></li>
+                            <li><a class="content-mau" href="">Dispatch and Delivery</a></li>
+                            <li><a class="content-mau" href="">Returns</a></li>
+                            <li><a class="content-mau" href="">Contact Us</a></li>
+                            <li><a class="content-mau" href="">Privacy Policy</a></li>
+                            <li><a class="content-mau" href="">Terms of Sale</a></li>
+                            <li><a class="content-mau" href="">Terms of Use</a></li>
+                            <li><a class="content-mau" href="">Send Us Feedback</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>|</li>
+                <li><a class="help-item" id="join" href="JoinUs.html">Join Us</a></li>
+                <li id="gachdung2">|</li>
+                <li onclick="signin()" id="signin-button" class="help-item">Sign In</li>
+                <li onmouseover="usermenuOpen()" onmouseout="usermenuOut()" class="help-item" id="hi"></li>
+                <div onmouseover="usermenuOpen()" onmouseout="usermenuOut()" id="user-menu" class="user-menu">
+                  <ul class="help-content">
+                      <li class="help-title"><a class="helptitle-mau" href="">Account</a></li>
+                      <li><a class="content-mau" href="">Profile</a></li>
+                      <li><a class="content-mau" href="">Orders</a></li>
+                      <li><a class="content-mau" href="">Favourites</a></li>
+                      <li><a class="content-mau" href="">Inbox</a></li>
+                      <li><a class="content-mau" href="">Experiences</a></li>
+                      <li><a class="content-mau" href="">Account Settings</a></li>
+                      <li><a class="content-mau" href="">Log Out</a></li>
+                  </ul>
+               </div>
+          </ul>
+      </div>
+   </header>
+   <nav id="nav-menu" class="nike-menu">
+      <div class="container"> 
+         <div class="other-menu">
+            <div class="search">
+               <div class="search-icon"><i class="far fa-search"></i></div>
+               <p class="search-chu">Search</p>
+            </div>
+            <div id="icon-content"><i id="icon2" class="far fa-heart"></i></div>
+            <div id="icon-content"><i id="icon2" class="far fa-shopping-bag"></i></div>
+         </div>
+         <a href="home.html"><img class="logo" src="Image/nike-4-logo-png-transparent.png" alt=""></a>
+         <ul class="nav-menu">
+            <li><a onmouseover="mOver()" onmouseout="mOut()" class="nav-item" href="men.html" id="men">Men</a>
+               <div onmouseover="mOver()" onmouseout="mOut()" class="dropdown-container">
+                  <div id="dropdown" class="dropdown mot">
+                     <div class="feature">
+                        <p class="title"><a class="title" href="">Featured</a></p>
+                        <ul class="content">
+                           <li><a href="Men/newsmen.html"> New Releases</a></li>
+                           <li><a href="SNKRS.html">SNKRS Launch Calendar</a></li>
+                           <li><a href="Men/menmemberacess.html">Member Access</a></li>
+                           <li><a href="Men/men-sustainable-material.html">Sustainable Materials</a></li>
+                           <li><a href="Men/6.0-men-air-force-1.html">Air Force 1</a></li>
+                           <li><a href="Men/club-football-team.html">Football Club Kits</a></li>
+                           <li><a href="Men/men-top-pick.html">Top Picks Under 2,300,000₫</a></li>
+                           <li><a href="Men/men-sale.html">Sale</a></li> 
+                        </ul>
+                     </div>
+               
+
+                     <div class="shoe">
+                        <p class="title"><a  class="title" href=""> Shoes</a></p>
+                        <ul class="content">
+                            <li><a href="Men/2.0-men-new-shoe.html"> Newest Sneakers</a></li>
+                            <li><a href="Men/2.1-men-shoes.html">All Shoes</a></li>
+                            <li><a href="Men/2.2-men-lifestyle-shoes.html">Lifestyle</a></li>
+                            <li><a href="Men/2.3-men-running-shoes.html">Running</a></li>
+                            <li><a href="Men/2.4-men-basketball-shoes.html">Basketball</a></li>
+                            <li><a href="WOMEN/2.5Jordan.html">Jordan</a></li>
+                            <li><a href="Men/2.6-men-football-shoes.html">Football</a></li> 
+                            <li><a href="Men/2.7-men-training-gym-shoes.html">Gym and Training</a></li>
+                            <li><a href="Men/2.8-men-skate.html">Skateboarding</a></li>
+                            <li><a href="Men/2.9-men-tennis-shoes.html">Tennis</a></li>
+                            <li><a href="Men/2.10-men-sandal-slide.html">Sandals and Slides</a></li>
+                            <li><a href="Men/2.11-men-nike-by-you-shoes.html">Customise with Nike By You</a></li>
+                            <li><a href="Men/2.12-men-sale-shoes.html">All Sale Shoes</a></li>
+                        </ul>
+                     </div>
+
+
+                     <div class="clothing">
+                        <p class="title"><a class="title" href="">  Clothing</a></p>
+                        <ul class="content">
+                           <li><a href="Men/3.0-men-clothing.html"> All Clothing</a></li>
+                           <li><a href="Men/3.1-top-t-shirt.html">Tops and T-Shirts</a></li>
+                           <li><a href="Men/3.2-men-kit-jersey.html">Jerseys and Kits</a></li>
+                           <li><a href="Men/3.3-men-hoodie-sweatshirt.html">Hoodies and Sweatshirts</a></li>
+                           <li><a href="Men/3.4-men-jacket-gilet.html">Jackets and Gilets</a></li>
+                           <li><a href="Men/3.5-men-trouser-tight.html">Pants and Leggings</a></li>
+                           <li><a href="Men/3.6-men-tracksuit.html">Tracksuits</a></li>
+                           <li><a href="Men/3.7-men-compression-baselayer.html">Compression and Base Layer</a></li> 
+                           <li><a href="Men/3.8-men-short.html">Shorts</a></li>
+                           <li><a href="Men/3.9-men-cap.html">Caps</a></li>
+                           <li><a href="Men/3.10-men-sock.html">Socks</a></li>
+                           <li><a href="Men/3.11-men-bag-backpack.html">Bags and Backpacks</a></li>
+                           <li><a href="Men/3.12-men-accessories-equipment.html">Accessories and Equipment</a></li>
+                           <li><a href="Men/3.13-men-sale-clothing.html">All Sale Clothing</a></li>
+                        </ul>
+                     </div>
+
+                     <div class="sport">
+                        <p class="title"><a class="title" href="">  Shop By Sport</a></p>
+                        <ul class="content">
+                           <li><a href="Men/4.0-running.html"> Running</a></li>
+                           <li><a href="Men/4.1-football.html"> Football</a></li>
+                           <li><a href="Men/4.2-basketball.html">Basketball</a></li>
+                           <li><a href="WOMEN/2.4gym&training.html">Gym and Training</a></li>
+                           <li><a href="WOMEN/4.3yoga.html">Yoga</a></li>
+                           <li><a href="WOMEN/4skate.html">Skateboarding</a></li>
+                           <li><a href="WOMEN/4tennis.html">Tennis</a></li> 
+                           <li><a href="WOMEN/4.8golf.html">Golf</a></li> 
+                        </ul>
+
+
+                        <p class="title"><a class="title" href=""> Shop By Brand</a></p>
+                        <ul class="content">
+                           <li><a href="Men/5.0-sportwear.html"> Nike Sportswear</a></li>
+                           <li><a href="Men/5.1-nikelab.html"> NikeLab</a></li>
+                           <li><a href="Men/5.2-nike-by-you.html">Nike By You</a></li>
+                           <li><a href="jordan.html">Jordan</a></li>
+                           <li><a href="WOMEN/5ACG.html">ACG</a></li>
+                           <li><a href="WOMEN/5NBA.html">NBA</a></li>
+                           <li><a href="WOMEN/4skate.html">Nike SB</a></li> 
+                        </ul>
+                     </div>
+
+                     <div class="icon">
+                        <p class="title"><a class="title" href=""> Icons</a></p>
+                        <ul class="content">
+                           <li><a href="Men/6.0-men-air-force-1.html">Air Force 1</a></li>
+                           <li><a href="Men/6.1-men-pegasus.html"> Pegasus</a></li>
+                           <li><a href="Men/6.2-men-blazer.html">Blazer</a></li>
+                           <li><a href="Men/6.3-men-jordan.html">Air Jordan 1</a></li>
+                           <li><a href="Men/6.4-men-air-max.html">Air Max</a></li>
+                        </ul>
+                     </div>
+                  </div>  
+               </div>    
+               
+               
+               
+               
+               
+            </li>
+            <li><a onmouseover="mOver2()" onmouseout="mOut2()" class="nav-item" href="women.html" id="women">Women</a>
+               <div onmouseover="mOver2()" onmouseout="mOut2()" class="dropdown-container">
+                  <div id="dropdown2" class="dropdown mot">
+                     <div class="feature">
+                        <p class="title2"><a class="title2" href="">Featured</a></p>
+                        <ul class="content2">
+                           <li><a href="WOMEN/1.1newreleases.html"> New Releases</a></li>
+                           <li><a href="WOMEN/1.2member.html">Member Access</a></li>
+                           <li><a href="WOMEN/1.3SustainableMaterials.html">Sustainable Materials</a></li>
+                           <li><a href="Men/6.0-men-air-force-1.html">Air Force 1</a></li>
+                           <li><a href="WOMEN/1.4FootballClubKits.html">Bra and Legging Duos</a></li>
+                           <li><a href="WOMEN/1.5Under2,300,000₫.html">Top Picks Under 2,300,000₫</a></li>
+                           <li><a href="WOMEN/1.6sale.html">Sale</a></li>
+                          
+                        </ul>
+                     </div>
+               
+
+                     <div class="shoe">
+                        <p class="title2"><a  class="title2" href=""> Shoes</a></p>
+                        <ul class="content2">
+                         
+                            <li><a href="WOMEN/2.1allshoes.html">All Shoes</a></li>
+                            <li><a href="WOMEN/2.2lifestyle.html">Lifestyle</a></li>
+                            <li><a href="WOMEN/2.3running.html">Running</a></li>
+                            <li><a href="WOMEN/2.4gym&training.html">Gym and Training</a></li>
+                            <li><a href="WOMEN/2.5Jordan.html">Jordan</a></li>
+                            <li><a href="WOMEN/2.6football.html">Football</a></li> 
+                            <li><a href="WOMEN/2.7Basketball.html">Basketball</a></li>
+                            <li><a href="WOMEN/2.8skateboarding.html">Skateboarding</a></li>
+                            <li><a href="WOMEN/2.9tennis.html">Tennis</a></li>
+                            <li><a href="WOMEN/2.10sandal&slides.html">Sandals and Slides</a></li>
+                            <li><a href="WOMEN/2.11nikebyyou.html">Customise with Nike By You</a></li>
+                        </ul>
+                     </div>
+
+
+                     <div class="clothing">
+                        <p class="title2"><a class="title2" href="">  Clothing</a></p>
+                        <ul class="content2">
+                           <li><a href="WOMEN/3.1allclothing.html"> All Clothing</a></li>
+                           <li><a href="WOMEN/3.2sportsbra.html">Sports Bras</a></li>
+                           <li><a href="WOMEN/3.3toptshirt.html">Tops and T-Shirts</a></li>
+                           <li><a href="WOMEN/3.4hoodiesweatshirt.html">Hoodie & Sweatshirts</a></li>
+                           <li><a href="WOMEN/3.5Jacketandgilet.html">Jackets and Gilets</a></li>
+                           <li><a href="WOMEN/3.6pant.html">Pants & Leggings</a></li>
+                           <li><a href="WOMEN/3.7tracksuit.html">Tracksuit</a></li> 
+                           <li><a href="WOMEN/3.8compression.html">Compression & Base Layer</a></li>
+                           <li><a href="WOMEN/3.9short.html">Shorts</a></li>
+                           <li><a href="WOMEN/3.10skirts.html">Skirts & Dresses</a></li>
+                           <li><a href="WOMEN/3.11Jersey.html">Jerseys & Kits</a></li>
+                           <li><a href="WOMEN/3.12modestwear.html">Modest Wear</a></li>
+                           <li><a href="WOMEN/3.13plussize.html">Plus Size</a></li>
+                           <li><a href="WOMEN/3.14cap.html">Cap</a></li>
+                           <li><a href="WOMEN/3.15sock.html">Sock</a></li>
+                           <li><a href="WOMEN/3.16Bags.html">Bags & Backpacks</a></li>
+                           <li><a href="WOMEN/3.17accesories.html">Accessories Equipment</a></li>
+                        </ul>
+                     </div>
+
+                     <div class="sport">
+                        <p class="title2"><a class="title2" href="">  Shop By Sport</a></p>
+                        <ul class="content2">
+                           <li><a href="WOMEN/4.0-running.html"> Running</a></li>
+                           <li><a href="WOMEN/4.1-football.html"> Football</a></li>
+                           <li><a href="WOMEN/4.2-basketball.html">Basketball</a></li>
+                           <li><a href="WOMEN/2.4gym&training.html">Gym and Training</a></li>
+                           <li><a href="WOMEN/4.3yoga.html">Yoga</a></li>
+                           <li><a href="WOMEN/4skate.html">Skateboarding</a></li>
+                           <li><a href="WOMEN/4tennis.html">Tennis</a></li> 
+                           <li><a href="WOMEN/4.8golf.html">Golf</a></li> 
+                        </ul>
+
+
+                        <p class="title2"><a class="title2" href=""> Shop By Brand</a></p>
+                        <ul class="content2">
+                           <li><a href="WOMEN/5.0-sportwear.html"> Nike Sportswear</a></li>
+                           <li><a href="WOMEN/5.1-nikelab.html"> NikeLab</a></li>
+                           <li><a href="customise.html">Nike By You</a></li>
+                           <li><a href="jordan.html">Jordan</a></li>
+                           <li><a href="WOMEN/5ACG.html">ACG</a></li>
+                           <li><a href="WOMEN/5NBA.html">NBA</a></li>
+                           <li><a href="WOMEN/4skate.html">Nike SB</a></li> 
+                        </ul>
+                     </div>
+
+                     <div class="icon">
+                        <p class="title2"><a class="title2" href=""> Icons</a></p>
+                        <ul class="content2">
+                           <li><a href="WOMEN/6.0air-force-1.html">Air Force 1</a></li>
+                           <li><a href="WOMEN/6.1pegasus.html"> Pegasus</a></li>
+                           <li><a href="WOMEN/6.2blazer.html">Blazer</a></li>
+                           <li><a href="WOMEN/6.3jordan.html">Air Jordan 1</a></li>
+                           <li><a href="WOMEN/6.4air-max.html">Air Max</a></li>
+                        </ul>
+                     </div>
+                  </div>  
+               </div>      
+            </li>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
+
+         <li><a onmouseover="mOver3()" onmouseout="mOut3()" class="nav-item" href="" id="kid">Kids</a>
+            <div onmouseover="mOver3()" onmouseout="mOut3()" class="dropdown-container">
+               <div id="dropdown3" class="dropdown ba">
+                  <div class="feature">
+                     <p class="title3"><a class="title3" href="">Featured</a></p>
+                     <ul class="content3">
+                        <li><a href="kid/1.0-newkid.html"> New Releases</a></li>
+                        <li><a href="kid/1.1-member.html">Member Access</a></li>
+                        <li><a href="kid/1.2-airforce.html">Air Force 1</a></li>
+                        <li><a href="kid/1.3-summer.html">Summer Shop</a></li>
+                        <li><a href="kid/1.4-tie.html">Tie Dye</a></li>
+                        <li><a href="kid/1.5-bag.html">Bags and Backpacks</a></li>
+                        <li><a href="kid/1.6-jordan.html">Jordan</a></li> 
+                        <li><a href="kid/1.7-sale.html">Sale</a></li> 
+                     </ul>
+                  </div>
+
+                  <div class="boy">
+                     <p class="title3"><a class="title3" href="">Boys' Shoes</a></p>
+                     <ul class="content3">
+                        
+                        <li><a href="kid/2.0-older.html">Older Kids (3–6.5)</a></li>
+                        <li><a href="kid/2.1-younger.html">Younger Kids (10–2.5)</a></li>
+                        <li><a href="kid/2.2-baby.html">Baby and Toddler (1.5–9.5)</a></li>
+                        <li><a href="kid/2.3-life.html">Lifestyle</a></li>
+                        <li><a href="kid/2.4-run.html">Running</a></li>
+                        <li><a href="kid/2.5-basketball.html">Basketball</a></li>
+                        <li><a href="kid/1.5-jordan.html">Jordan</a></li> 
+                        <li><a href="kid/2.6-football.html">Football</a></li>
+                        <li><a href="kid/2.7-sandals.html">Sandals and Slides</a></li>
+                        <li><a href="kid/2.8-allshoes.html">All Shoes</a></li>
+                     </ul>
+                     <p class="title3"><a class="title3" href="">Boys' Clothing</a></p>
+                     <ul class="content3">
+                        <li><a href="">Tops and T-Shirts</a></li>
+                        <li><a href="">Hoodies and Sweatshirts</a></li>
+                        <li><a href="">Pants and Leggings</a></li>
+                        <li><a href="">Shorts</a></li>
+                        <li><a href="">All Boys' Clothing</a></li>
+                     </ul>
+                  </div>
+                  
+
+
+                  
+
+
+                 <div class="girl">
+                     <p class="title3" ><a class="title3" href="">Girls' Shoes</a></p>
+                     <ul class="content3">
+                        
+                        <li><a href="">Older Kids (3–6.5)</a></li>
+                        <li><a href="">Younger Kids (10–2.5)</a></li>
+                        <li><a href="">Baby and Toddler (1.5–9.5)</a></li>
+                        <li><a href="">Lifestyle</a></li>
+                        <li><a href="">Running</a></li>
+                        <li><a href="">Basketball</a></li>
+                        <li><a href="">Football</a></li> 
+                        <li><a href="">Sandals and Slides</a></li> 
+                        <li><a href="">All Shoes</a></li> 
+                     </ul>
+
+                     <p class="title3"><a class="title3" href="">Girls' Clothing</a></p>
+                     <ul class="content3">
+                        <li><a href="">Tops and T-Shirts</a></li>
+                        <li><a href="">Sports Bras </a></li>
+                        <li><a href="">Hoodies and Sweatshirts</a></li>
+                        <li><a href="">Pants and Leggings</a></li>
+                        <li><a href="">Shorts</a></li>
+                        <li><a href="">All Girls' Clothing</a></li>
+                     </ul>
+                 </div>
+
+
+                  <div class="equip">
+                     <p class="title3"><a class="title3" href="">Accessories and Equipment</a></p>
+                     <ul class="content3">
+                        <li><a href="">Balls</a></li>
+                        <li><a href="">Bags and Backpacks</a></li>
+                        <li><a href="">Hats and Headwear</a></li>
+                     </ul>
+
+                     <p class="title3"><a class="title3" href="">Shop By Sport</a></p>
+                     <ul class="content3">
+                        <li><a href="">Running</a></li>
+                        <li><a href="">Football</a></li>
+                        <li><a href="">Basketball </a></li>
+                        <li><a href="">Gym and Training</a></li>
+                        <li><a href="">Tennis</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>    
+         </li>
+         
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+         
+         
+         
+
+         <li><a onmouseover="mOver4()" onmouseout="mOut4()" class="nav-item" href="customise.html" id="customise">Customise</a>
+            <div onmouseover="mOver4()" onmouseout="mOut4()" class="dropdown-container">
+               <div id="dropdown4" class="dropdown2">  
+                  <div class="feature">
+                     <p class="title4"><a class="title4" href="">Featured</a></p>
+                     <ul class="content4">
+                        <li><a href="CUSTOMISE/1.1neww.html">Nike By You New Releases</a></li>
+                     </ul>
+                  </div>
+
+
+                  <div class="icon">
+                     <p class="title4"><a class="title4" href="">Nike By You</a></p>
+                     <ul class="content4">
+                        <li><a href="Men/2.11-men-nike-by-you-shoes.html">Men</a></li>
+                        <li><a href="WOMEN/2.11nikebyyou.html">Women</a></li>
+                     </ul>
+                  </div>
+
+                  <div class="icon">
+                     <p class="title4"><a class="title4" href="">By Sport</a></p>
+                     <ul class="content4">
+                        <li><a href="CUSTOMISE/3.1Lifestyle.html"> Lifestyle</a></li>
+                        <li><a href="CUSTOMISE/3.2running.html"> Running</a></li>
+                        <li><a href="CUSTOMISE/3.3basketball.html">Basketball</a></li>
+                        <li><a href="CUSTOMISE/3.4football.html">Football</a></li>
+                     </ul>
+                  </div>
+
+
+                  <div class="icon">
+                     <p class="title4"><a class="title4" href=""> Icons</a></p>
+                     <ul class="content4">
+                        <li><a href="CUSTOMISE/4.1Airmax.html">Air Max</a></li>
+                        <li><a href="CUSTOMISE/4.2AF.html">Air Force 1</a></li>
+                        <li><a href="">Free</a></li>
+                        <li><a href="CUSTOMISE/4.4fly.html">Flyknit</a></li>
+                     </ul>
+                  </div>
+               </div>   
+            </div>   
+         </li>    
+              
+              
+              
+              
+              
+             
+              
+              
+              
+             
+              
+              
+              
+              
+
+
+
+
+
+            <li><a onmouseover="mOver5()" onmouseout="mOut5()" class="nav-item" href="sale.html" id="sale">Sale</a>
+               <div onmouseover="mOver5()" onmouseout="mOut5()" class="dropdown-container">
+                  <div id="dropdown5" class="dropdown2"> 
+                     <div class="sales">
+                        <p class="title5"><a class="title5" href="">Featured</a></p>
+                        <ul class="content5">
+                           <li><a href="sale.html">Shop All Sale</a></li>
+                        </ul>
+                     </div>
+
+
+                     <div class="sales">
+                        <p class="title5"><a class="title5" href="">Men's Sale</a></p>
+                        <ul class="content5">
+                           
+                           <li><a href="Men/2.1-men-shoes.html">Shoes</a></li>
+                           <li><a href="Men/3.0-men-clothing.html">Clothing</a></li>
+                           <li><a href="Men/3.12-men-accessories-equipment.html">Accessories and Equipment</a></li>
+                        </ul>
+                     </div>
+
+                     <div class="sales">
+                        <p class="title5"><a class="title5" href="">Women's Sale</a></p>
+                        <ul class="content5">
+                        <li><a href="WOMEN/2.1allshoes.html">Shoes</a></li>
+                        <li><a href="WOMEN/3.1allclothing.html">Clothing</a></li>
+                        <li><a href="WOMEN/3.17accesories.html">Accessories and Equipment</a></li> 
+                     </ul>
+                     </div>
+
+                     <div class="sales">
+                        <p class="title5"><a class="title5" href="">Kids' Sale</a></p>
+                        <ul class="content5">
+                        <li><a href="kid/2.8-allshoes.html"> Shoes</a></li>
+                        <li><a href="">Clothing</a></li>
+                        <li><a href="">Accessories and Equipment</a></li>
+                        
+                     </ul>
+                     </div>
+                  </div>  
+               </div>  
+            </li>
+              
+              
+              
+              
+              
+              
+             
+              
+              
+              
+              
+             
+              
+              
+
+
+
+
+            <li><a class="nav-item" href="SNKRS.html">SNKRS</a></li>
+
+
+
+         </ul>
+      </div>        
+   </nav>
+   <div class="signin-container">
+      <div id="signin" class="signin">
+         <img class="nikelogo" src="Image/nike-4-logo-png-transparent.png" alt="">
+         <p class="signin-title">YOUR ACCOUNT FOR EVERYTHING NIKE</p>
+         <div class="text-box">
+            <input id="textbox" type="text" placeholder="Username">
+            <p id="error"></p>
+            <input id="textbox2" type="password" placeholder="Password">
+            <p id="error2"></p>
+         </div>
+         <div class="check-container">
+            <div class="check">
+               <input id="keep" type="checkbox" />
+               <span class="keep-content">Keep me signed in</span>
+            </div>
+            <p class="forget">Forgotten your password?</p>
+         </div>
+         <p class="policy">By logging in, you agree to Nike's <span id="gach">Privacy Policy</span> and <span id="gach">Terms of Use</span>.</p>
+         <div onclick="submit()" id="signin-box">
+            SIGN IN     
+         </div>
+         <p class="join">Not a Member? <span class="den" id="gach">Join Us.</span></p>
+         <div onclick="resetform()" id="x">
+            <span onclick="signin()" id="bar1" class="bar"></span>
+            <span onclick="signin()" id="bar2" class="bar"></span>
+         </div>
+      </div>
+     
+   </div>
+   <div id="hoa-home-info">
+      <span id="p1">HELLO NIKE APPS</span>
+      <span id="p2">Download the app to access everything Nike. Get Your Great</span>
+   </div>
+   <div id="darken">
+
+   </div>
+   <div id="main-container">
+      <div class="content-title-container" id="header-menu-fiter">
+         <p class="content-title">Men</p>
+         <div class="other-link">
+             <a href="Men/2.1-men-shoes.html">Shoes</a>
+             <a href="Men/3.0-men-clothing.html">Clothing</a>
+             <a href="Men/3.12-men-accessories-equipment.html">Gear</a>
+         </div>
+      </div>
+      <div>
+         <div class="hoa-hinh-mot">
+             <a href=""><img src="Image/Home/pegasus.jpg" alt=""></a>
+             <a href=""><div>
+                <p class="hoa-chuhoa2">PEGASUS TRAIL 3 GORE-TEX</p>
+                <p class="hoa-chuthuong2">Wet road. Wet trail. Dry miles.</p>
+             </div></a>
+          </div>
+          <div class="hoa-box1-container">
+             <div class="hoa-box1">Shop</div>
+          </div>
+      </div>
+      <div class="hoa-container5">
+         <p class="hoa-latest">New Arrivals</p>
+         <div class="nike-icon-container">
+            <div class="nike-icon1">
+                 <a href=""><img src="Men/Image/Newmen/air-jordan-1-mid-se-shoes-7fj1ZJ.jfif" alt=""></a>
+                 <div class="product-container">
+                     <div class="product-info">
+                         <p class="product-name">Air Jordan 1 Mid SE</p>
+                         <p class="product-type">Shoes</p>
+                     </div>
+                     <p class="product-price">3,519,000₫</p>
+                 </div>
+             </div>
+            <div class="nike-icon2">
+                 <a href=""><img src="Men/Image/2.1-men-shoes/air-force-1-07-shoe-WrLlWX.jfif" alt=""></a>
+                 <div class="product-container">
+                     <div class="product-info">
+                         <p class="product-name">Nike Air Force 1 '07</p>
+                         <p class="product-type">Men's Shoe</p>
+                     </div>
+                     <p class="product-price">2,649,000₫</p>      
+                 </div>
+            </div>
+            <div class="nike-icon3">
+                 <a href=""><img src="Men/Image/2.0-men-new-shoes/air-jordan-xxxvi-first-light-pf-basketball-shoes-fjPfDg.jfif" alt=""></a>
+                 <div class="product-container">
+                     <div class="product-info">
+                         <p class="product-name">Air Jordan XXXVI 'First Light' PF</p>
+                         <p class="product-type">Basketball Shoes</p>
+                     </div>
+                     <p class="product-price">5,439,000₫</p>      
+                 </div>
+            </div>
+         </div>
+      </div>  
+      <div class="hoa-container2">
+         <p class="hoa-latest">Feature Footwear</p>
+         <div class="latest-image">
+            <div class="latest1">
+               <a href=""><img src="Men/men-s-shoes-clothing-accessories.jpg" alt=""></a>
+               <div class="latest-info-container">
+                  <a class="latest2-info" href="">Jordan Apparel</a>
+                  <div class="hoa-box4">Shop</div>
+               </div>
+            </div>
+            <div class="latest2">
+               <a href=""><img src="Men/men-s-shoes-clothing-accessories (1).jpg" alt=""></a>
+               <div class="latest-info-container">
+                  <a class="latest2-info" href="Men/men-top-pick.html">Shoes Under 2,300,000₫</a>
+                  <div class="hoa-box4">Shop</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="hoa-container2">
+         <p class="hoa-latest">The Latest</p>
+         <div class="hoa-hinh-mot">
+             <a href=""><img src="Men/men-s-shoes-clothing-accessories (2).jpg" alt=""></a>
+             <a href=""><div>
+                <p class="hoa-chuthuong1">Just In</p>
+                <p class="hoa-chuhoa">BLAZER MID ‘77 JUMBO</p>
+                <p class="hoa-chuthuong2">Stay bold any way you move, with style that cannot be contained.</p>
+             </div></a>
+          </div>
+          <div class="hoa-box1-container">
+             <div class="hoa-box1">Shop</div>
+          </div>
+      </div>
+      <div class="hoa-container4">
+         <p class="hoa-latest">Trending</p>
+         <div class="hoa-hinh-mot">
+            <a href=""><img src="Image/Home/yoga.jpg" alt=""></a>
+            <a href=""><div>
+               <p class="hoa-chuhoa2">NIKE YOGA</p>
+               <p class="hoa-chuthuong2">Destress with our latest yoga collection.</p>
+            </div></a>
+         </div>
+         <div class="hoa-box1-container">
+            <div class="hoa-box1">Shop</div>
+         </div>
+      </div>    
+      <div class="hoa-container5">
+         <p class="hoa-latest">The Essentials</p>
+         <div class="nike-icon-container">
+            <div class="nike-icon1">
+               <a href=""><img src="Men/men-s-shoes-clothing-accessories (3).jpg" alt=""></a>
+               <div class="hoa-box5-container">
+                  <div id="icon3" class="hoa-box4"><a href="Men/3.1-top-t-shirt.html">Tops and T-Shirts</a></div>
+               </div>
+            </div>
+            <div class="nike-icon2">
+               <a href=""><img src="Men/men-s-shoes-clothing-accessories (4).jpg" alt=""></a>
+               <div class="hoa-box5-container">
+                  <div id="icon3" class="hoa-box4"><a href="Men/3.8-men-short.html">Shorts</a></div>
+               </div>
+            </div>
+            <div class="nike-icon3">
+               <a href=""><img src="Men/men-s-shoes-clothing-accessories (5).jpg" alt=""></a>
+               <div class="hoa-box5-container">
+                  <div id="icon3" class="hoa-box4"><a href="Men/3.5-men-trouser-tight.html">Pants and Leggings</a></div>
+               </div>
+            </div>
+         </div>
+      </div>  
+      <div class="hoa-container6">
+         <div class="menu-bottom-container" onmouseover="dropdownOpen()" onmouseout="dropdownOut()">
+            <div>
+               <ul class="menu-bottom">
+                  <li class="menu-bottom-title">Men's Shoes</li>
+                  <li><a href="">All Men's Shoes</a></li>
+                  <li><a href="">Men's Lifestyle Shoes</a></li>
+                  <li><a href="">Men's Running Shoes</a></li>
+                  <li><a href="">Men's Football Boots</a></li>
+               </ul>
+            </div>
+            <div>
+               <ul class="menu-bottom">
+                  <li class="menu-bottom-title">Men's Clothing</li>
+                  <li><a href="">All Men's Clothing</a></li>
+                  <li><a href="">Men's T-Shirts</a></li>
+                  <li><a href="">Men's Long-Sleeve Tops</a></li>
+                  <li><a href="">Men's Short-Sleeve Tops</a></li>
+               </ul>
+            </div>
+            <div>
+               <ul class="menu-bottom">
+                  <li class="menu-bottom-title">Men's Gear</li>
+                  <li><a href="">All Men's Accessories</a></li>
+                  <li><a href="">Men's Bags</a></li>
+                  <li><a href="">Men's Hats</a></li>
+                  <li><a href="">Men's Socks</a></li>
+               </ul>
+            </div>
+             <div>
+               <ul class="menu-bottom">
+                  <li class="menu-bottom-title">Featured</li>
+                  <li><a href="">Black Friday</a></li>
+                  <li><a href="">Cyber Monday</a></li>
+                  <li><a href="">All Men's Products</a></li>
+                  <li><a href="">New Men's Releases</a></li>
+               </ul>
+            </div>
+         </div>
+         <div id="bottom-dropdown" class="dropdown3" onmouseover="dropdownOpen()" onmouseout="dropdownOut()">
+            <div>
+               <ul class="menu-bottom2">
+                  <li><a href="">All Men's Shoes</a></li>
+                  <li><a href="">Men's Lifestyle Shoes</a></li>
+                  <li><a href="">Men's Running Shoes</a></li>
+                  <li><a href="">Men's Football Boots</a></li>
+               </ul>
+            </div>
+            <div>
+               <ul class="menu-bottom2">
+                  <li><a href="">All Men's Clothing</a></li>
+                  <li><a href="">Men's T-Shirts</a></li>
+                  <li><a href="">Men's Long-Sleeve Tops</a></li>
+                  <li><a href="">Men's Short-Sleeve Tops</a></li>
+               </ul>
+            </div>
+            <div>
+               <ul class="menu-bottom2">
+                  <li><a href="">All Men's Accessories</a></li>
+                  <li><a href="">Men's Bags</a></li>
+                  <li><a href="">Men's Hats</a></li>
+                  <li><a href="">Men's Socks</a></li>
+               </ul>
+            </div>
+             <div>
+               <ul class="menu-bottom2">
+                  <li><a href="">Black Friday</a></li>
+                  <li><a href="">Cyber Monday</a></li>
+                  <li><a href="">All Men's Products</a></li>
+                  <li><a href="">New Men's Releases</a></li>
+               </ul>
+               <br>
+               <br>
+               <br>
+            </div>
+            
+         </div>
+      </div>  
+   <div id="footer" class="footer">
+      <div class="footer1-container">
+          <div class="footer-column-container">
+              <div class="footer-column" id="column1">
+                   <ul>
+                       <li><a  id="footer-column-title" class="footer-column-content" href="">FIND A STORE</a> </li>
+                       <li><a  id="footer-column-title" class="footer-column-content" href="">BECOME A MEMBER</a> </li>
+                       <li><a  id="footer-column-title" class="footer-column-content" href="">SIGN UP FOR EMAIL</a> </li>
+                       <li><a  id="footer-column-title" class="footer-column-content" href="">SEND US FEEDBACK</a></li>
+                   </ul>
+              </div>
+              <div class="footer-column" id="column2">
+                   <ul>
+                       <li><a id="footer-column-title" class="footer-column-content" href="">GET HELP</a></li>
+                       <li><a class="footer-column-content"  href="">Order Status</a></li>
+                       <li><a class="footer-column-content"  href="">Delivery</a></li>
+                       <li><a class="footer-column-content"  href="">Returns</a></li>
+                       <li><a class="footer-column-content"  href="">Payment Options</a></li>
+                       <li><a class="footer-column-content"  href="">Contact Us</a></li>
+   
+                   </ul>
+              </div>
+              <div class="footer-column" id="column3">
+                  <ul>
+                       <li><a id="footer-column-title" class="footer-column-content" href="">ABOUT NIKE</a> </li>
+                       <li><a class="footer-column-content"  href="">News</a> </li>
+                       <li><a class="footer-column-content"  href="">Careers</a> </li>
+                       <li><a class="footer-column-content"  href="">Investors</a></li>
+                       <li><a class="footer-column-content" href="">Sustainability</a></li>
+                  </ul>
+              </div>
+           </div>
+           <div class="footer-icon-container">
+               <div class="footer-icon"><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+               <div class="footer-icon"><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+               <div class="footer-icon"><a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a></div>
+               <div class="footer-icon"><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+          </div>
+      </div>
+      <div class="footer2-container">
+          <div class="site-container">
+              <div class="site">
+                <a href=""><i class="fa fa-map-marker" aria-hidden="true"></i> Vietnam</a>
+              </div>
+          
+              <div class="license">
+                  © 2021 Nike, Inc. All Rights Reserved
+              </div>
+          </div>
+          <div class="term">
+              <a href="">Guides</a>
+              <a href="">Team of Sale</a>
+              <a href="">Team of Use</a>
+              <a href="">Nike Privacy Policy</a>
+          </div>
+      </div>
+      <div id="background-white"></div>
+  </div>
+     <script src="JS/blur.js"></script>
+     <script src="JS/form.js"></script>
+     <script src="JS/movetext.js"></script>
+</body>
+<script>
+    window.onscroll = function() {myFunction()};
+   
+   var headerMenu = document.getElementById("header-menu-fiter");
+    var sticky = headerMenu.offsetTop;
+
+    function myFunction() {
+        console.log("scroll")
+        if (window.pageYOffset > sticky) {
+            headerMenu.classList.add("sticky");
+        } 
+        else {
+            headerMenu.classList.remove("sticky");
+        }
+    }
+</script>
+</html>

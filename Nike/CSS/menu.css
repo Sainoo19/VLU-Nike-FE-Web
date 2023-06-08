@@ -1,0 +1,440 @@
+*{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+}
+body{
+    background-color: white;
+
+}
+.logo{
+    width: 75px;
+    height: auto;
+    position: absolute;
+    left: 40px;
+    top: 30px;
+
+}
+.logo:hover{
+    opacity: 0.5;
+}
+nav{
+    width: 100%;
+   
+}    
+.container{
+    display: flex;
+    background-color: white;
+
+    height: 60px;
+    justify-content: center;
+}
+.container .nav-menu{
+    z-index: 10000;
+    display: inline-flex;
+  
+}
+#menu-container{
+    z-index: 10000;
+}
+.nike-menu.sticky{
+    background-color: white;
+    height: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.nike-menu.sticky{
+    width: 10%;
+    top:60px;
+    height: calc(100vh - 60px);
+}
+.nav-item{
+    text-decoration: none;
+    padding: 14px 12px;
+    color: black;
+    display: block;
+    height: 24px;
+    margin: 6px 0px;
+    font-size: 16px;
+
+}
+.nav-item2{
+    text-decoration: none;
+    padding: 14px 12px;
+    color: black;
+    display: none;
+    height: 24px;
+    margin: 6px 0px;
+    font-size: 16px;
+
+}
+.nav-item:hover{
+
+    border-bottom:black 2px solid ;
+}
+
+.dropdown-container{
+    position: absolute;
+    width: 100%;    
+    top: 95px;
+    left: 0;
+   
+
+}
+.other-menu{
+    position: absolute;
+    display: flex;
+    top: 48px;
+    right: 50px;
+
+}
+.search{
+    display: flex;
+    position: relative;
+    top: -4px;
+    width: 175px;
+    background-color: rgba(235, 235, 235, 0.596);
+    height: 40px;
+    align-items: center;
+    border-radius: 20px;
+    margin-right: 8px;
+    z-index: 0;
+}
+#icon2{
+    color: black;
+    font-size: 24px;
+}
+.search-chu{
+    font-size: 16px;
+    position: relative;
+    margin-left: 12px;
+    color: rgba(177, 177, 177, 0.856);
+}
+#icon-content{
+    margin-left: 12px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.search-icon{
+    margin-left: 10px;
+    font-size: 21px;
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+}
+#icon-content:hover{
+    background-color: rgba(218, 218, 218, 0.747);
+}
+.search:hover{
+    background-color: rgba(218, 218, 218, 0.747);
+}
+.search:hover .search-chu{
+    color: rgb(80, 80, 80);
+}
+
+.bar-container{
+    flex-direction: column;
+    display: none;
+}
+.search-container{
+    display: none;
+
+}
+#bar{
+    height: 2px;
+    width: 20px;
+    background-color: black;
+    margin-top: 6px;
+    position: relative;
+    top: -3.5px;
+}
+#icon-content2{
+    margin-left: 12px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#icon-content3{
+    margin-left: 12px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.heart-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#jordan-link{
+    display: none;
+}
+#nike-member-container{
+    display: none;
+}
+.other-menu2{
+    display: none;
+}
+#exit{
+    display: none;
+}
+
+#men3{
+    display: none;
+}
+
+
+@media screen and (max-width: 700px) {
+    
+    body.active{
+        overflow: hidden;      
+    }
+
+    #men3{
+        display: inherit;
+    }
+    
+    #menu-container{
+        z-index: 10000;
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        right: 0;
+        width: 85%;
+        background-color: white;
+        height: 100%;
+        visibility: hidden;
+        display: none;
+        transition: 0.3s;
+    }
+
+    #menu-container.active{
+        display: flex;
+        animation: transition16 0.3s forwards;
+    }
+
+    @keyframes transition16 {
+        0% {display: flex;visibility: hidden;right: -100%;}
+        10%{display: flex;visibility: hidden; right: -100%;}
+        100%{display: flex;visibility: visible; right: 0;}
+    } 
+
+
+    .nav-menu{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 48px;
+    }
+    .search{
+        display: none;
+    }
+    .heart-container{
+        display: none;
+    }
+    .bar-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .search-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        top: -8px;
+        left: 0px;
+        padding-left: 15px;
+        
+    }
+    #logo.active{
+        animation: delay4 0.3s forwards;
+    }
+
+    @keyframes delay4 {
+        0% {filter: none;}
+        80%{filter: none;}
+        100%{filter: blur(4px) }
+    } 
+
+    .other-menu{
+        top: 10px;
+        right: 15px;
+    }
+    .nav-item{
+        display: none;
+    }
+    .nav-item2{
+        font-size: 24px;
+        padding: 0;
+        width: 78%;
+        margin-bottom: 16px;
+        margin-left: 36px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.3s;
+    }
+    .nav-item2.active{
+        animation: transition7 0.15s forwards;
+    }
+    .nav-item2.active2{
+        animation: transition7 0.15s forwards;
+    }
+
+    @keyframes transition7 {
+        0% {margin-left: 0px;visibility: visible; opacity: 1;}
+        90%{margin-left: -50%; visibility: hidden; opacity: 0;display: flex;}
+        100%{display: none;visibility: hidden; opacity: 0;}
+    } 
+    
+
+    #chevron-right{
+        font-size: 16px;
+    }
+    #jordan-link{
+        display: flex;
+        margin-top: 30px;
+        position: relative;
+        left: 30px;
+        transition: 0.3s;
+    }
+    #jordan-link.active{
+        animation: transition7 0.15s forwards;
+    }
+    #jordan-icon{
+        width: 15%;
+        position: absolute;
+        
+    }
+    #jordan-text{
+        position: absolute;
+        left: 56px;
+        top: 8px;
+    }
+    .hoa-box7{
+        width: fit-content;
+        margin-top: 30px;
+        background-color: white;
+        padding: 12px 28px;
+        color: black;
+        border-radius: 25px;
+        cursor: pointer;
+        border: 1px solid rgba(187, 187, 187, 0.555);
+    }
+    #signin-box-container{
+        display: flex;
+        column-gap: 10px;
+    }
+    .nike-member{
+        font-size: 20px;
+    }
+    #gray-text{
+        color: gray;
+    }
+    #nike-member-container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 36px;
+        margin-right: 40px;
+        margin-top: 100px;
+        transition: 0.3s;
+    }
+    #nike-member-container.active{
+        animation: transition7 0.15s forwards;
+    }
+    .other-menu2{
+        display: flex;
+        flex-direction: column;
+        margin-top: 48px;
+        margin-left: 40px;
+        transition: 0.3s;
+    }
+    .other-menu2.active{
+        animation: transition7 0.15s forwards;
+    }
+    #other-menu2-content{
+        display: flex;
+        align-items: center;
+        margin-top: 12px;
+    }
+    #icon3{
+        color: black;
+        font-size: 24px;
+        margin-right: 20px;
+    }
+    #exit{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        top: 24px;
+        left: calc(36px + 73.5%);
+        transition: 0.3s;
+    }
+    #exit.active{
+        animation: transition7 0.15s forwards;
+    }
+    #bar4{
+        transform: rotate(-45deg);
+    }
+    #bar3{
+        transform: rotate(45deg);
+        position: relative;
+        top:2px;
+    }
+    .bar2{
+        height: 2px;
+        width: 18px;
+        background-color: rgb(0, 0, 0);
+        display: block;
+    
+    }
+    .nav-item3{
+        font-size: 24px;
+        padding: 0;
+        margin-bottom: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #men3{
+        position: absolute;
+        margin-top: 56px;
+        visibility: hidden;
+        right: 0;
+    }
+    #men3.active{
+        animation: transition8 0.3s forwards;
+    }
+    #men3.active2{
+        animation: transition13 0.15s forwards;
+    }
+    @keyframes transition8 {
+        0% {visibility: hidden;right: 0;}
+        50% {visibility: hidden;right: 0;}
+        100%{visibility: visible;right: 75%;}
+    } 
+    @keyframes transition13 {
+        0% {visibility: visible;right: 75%;}
+        100%{visibility: hidden;right: 100%;}
+    } 
+
+    
+
+}
+@media screen and (max-width: 375px) {
+    #menu-container{
+      
+        width: 90%;
+      
+    }
+
+}

@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    text-decoration: 0;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+    Header
+*/
+#snkrs-header{
+    width: 97%;
+    height: 35px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+
+.link-nike{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(110, 110, 110);
+}
+#arrow-left{
+    margin-right: 3px;
+}
+.utility-container{
+    display: flex;
+    align-items: center;
+}
+.utility{
+    font-size: 12px;
+    color: rgb(110, 110, 110);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 24px;
+    cursor: pointer;
+}
+#marker-icon{
+    font-size: 16px;
+    margin-right: 3px;
+}
+#Vietnam-text{
+    position: relative;
+    top: -1px;
+}
+#change-color-black:hover{
+    color: black;
+}
+
+/*
+    Menu
+*/
+.container{
+    display: flex;
+    background-color: white;
+    position: relative;
+    height: 60px;
+    justify-content: center;
+    border-top: 1px solid rgba(189, 189, 189, 0.514);
+    border-bottom: 1px solid rgba(189, 189, 189, 0.514);
+}
+
+.snkrs-logo{
+    position: absolute;
+    left: 1.5%;
+    top: 10px;
+}
+#gallery-view{
+    position: absolute;
+    right: 1.5%;
+    display: flex;
+    width: 22px;
+    flex-wrap: wrap;
+    top: 20px;
+    cursor: pointer;
+}
+#square{
+    width: 8px;
+    height: 8px;
+    background-color: rgb(110, 110, 110);
+    margin-left: 2px;
+    margin-bottom: 2px;
+}
+.snkrs-menu{
+    display: inline-flex;
+}
+.nav-item{
+    text-decoration: none;
+    padding: 14px 0px;
+    color: black;
+    display: block;
+    height: 24.5px;
+    margin: 6px 20px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.nav-item:hover{
+
+    border-bottom:black 2px solid ;
+}
+#gach1{
+    border-bottom:black 2px solid ;
+}
+#gallery-view2{
+    position: absolute;
+    right: 1.5%;
+    display: flex;
+    width: 22px;
+    flex-wrap: wrap;
+    top: 20px;
+    cursor: pointer;
+    visibility: hidden;
+}
+#rectangle1{
+    width: 18px;
+    height: 13px;
+    margin-bottom: 2px;
+    background-color: rgb(110, 110, 110);
+}
+#rectangle2{
+    width: 18px;
+    height: 3px;
+    background-color: rgb(110, 110, 110);
+}
+/*
+    Main
+*/
+#main-container1{
+    width: 100%;
+    position: absolute;
+    opacity: 1;
+}
+#main-container2{
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+}
+#main-container3{
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+}
+
+#product-container{
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.product-card{
+    width: 32.8%;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.product-card img{
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s ease;
+}   
+.product-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+    margin-bottom: 40px;
+}
+.product-name{
+    font-size: 16px;
+    margin-top: 28px;
+}
+.product-type{
+    font-size: 24px;
+    margin-top: 4px;
+}
+.coming{
+    position: absolute ;
+    top: 30px;
+    padding: 12px 24px;
+    border-radius: 24px;
+    width: fit-content;
+    background-color: rgba(226, 226, 226, 0.37);
+    z-index: 10;
+    color: rgba(168, 168, 168, 0.829);
+    visibility: hidden;
+}
+.coming2{
+    position: absolute ;
+    top: 30px;
+    padding: 12px 24px;
+    border-radius: 24px;
+    width: fit-content;
+    background-color: black;
+    z-index: 10;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.coming2:hover{
+    opacity: 0.8;
+}
+.coming3{
+    position: absolute ;
+    top: 30px;
+    padding: 12px 24px;
+    border-radius: 24px;
+    width: fit-content;
+    background-color: black;
+    z-index: 10;
+    color: white;
+    cursor: pointer;
+    visibility: hidden;
+}
+.coming3:hover{
+    opacity: 0.8;
+    transition: 0.3s ease;
+}
+#product-info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+#time{
+    position: absolute;
+    left: 2.8%;
+    top: 2%;
+    cursor: pointer;
+}
+#month{
+    font-size: 20px;
+}
+#day{
+    font-size: 32px;
+}

@@ -1,0 +1,91 @@
+.join-us-title{
+    margin-top: 48px;
+    font-size: 32px;
+    line-height: 1.2;
+}
+.join-us-content{
+    font-size: 20px;
+    margin-top: 24px;
+    line-height: 1.5;
+}
+#box-container{
+    display: flex;
+    justify-content: center;
+    column-gap: 6px;
+}
+.nike-feature-image{
+    width: 32.7%;
+}
+.nike-feature-image img{
+    object-fit: cover;
+    height: 77%;
+    width: 100%;
+}
+.nike-feature-container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-right: 3%;
+    cursor: pointer;
+    height: 700px;
+}
+.text-feature-container{
+    margin-top: 32px;
+    row-gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.text-feature-title{
+    font-size: 24px;
+    margin-bottom: -4px;
+}
+#download{
+    border-bottom: 1px solid black;
+    width: fit-content;
+    padding-bottom: 4px;
+}
+#download:hover{
+    border-bottom: 2px solid black;
+}
+.access-text{
+    position: absolute;
+    left: 2%;
+    bottom: 6%;
+    font-size: 24px;
+    color: white;
+    width: 40%;
+
+}
+.access-text2{
+    position: absolute;
+    left: 2%;
+    bottom: 6%;
+    font-size: 24px;
+    color: white;
+
+}
+.access-container{
+    margin-left: 3%;
+    margin-right: 3%;
+    position: relative;
+}
+.box-container2{
+    position: absolute;
+    left: 2%;
+    bottom: 6%;
+    display: flex;
+    justify-content: center;
+    column-gap: 6px;
+    width: 94%;
+}
+#access-image{
+    height: 900px;
+    width: 100%;
+    object-fit: cover;
+}
+#margin{
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
